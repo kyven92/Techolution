@@ -217,18 +217,19 @@ for i in image_ids:
   if i not in no_image_ids:
     dummy_lables.append(labelColumn[i])
 
-Y = pd.DataFrame(dummy_lables)
-len(test)
+
+labelColumn = pd.DataFrame(dummy_lables)
 
 # print("After Dropping:",len(df))
 
-# labelColumn = labelColumn.str.replace('[','')
-# labelColumn = labelColumn.str.replace(']','')
-# labelColumn.head()
-# labelColumn = labelColumn.to_numpy()
-# labelColumn.flatten()
-# labelColumn = [labelColumn_val.split(",") for labelColumn_val in  labelColumn]
-# labelColumn[0]
+labelColumn = labelColumn.str.replace('[','')
+labelColumn = labelColumn.str.replace(']','')
+labelColumn.head()
+labelColumn = labelColumn.to_numpy()
+labelColumn.flatten()
+labelColumn = [labelColumn_val.split(",") for labelColumn_val in  labelColumn]
+
+
 
 Y=one_hot.fit_transform(labelColumn)
 Y.shape
