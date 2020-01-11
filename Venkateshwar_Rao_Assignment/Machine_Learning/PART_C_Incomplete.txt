@@ -1,0 +1,5 @@
+# I couldnt complete the GRPC module in the given time but I worked on similat rather RMI in CPP in my previous organisation for remotely invoking the functionalities of Live streaming.
+
+# I am giving list the link here for your reference, I can explain the functionalities about the libraries and usage if given a change
+
+https://github.com/kyven92/CPPRemote-Modified
